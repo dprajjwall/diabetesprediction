@@ -1,0 +1,139 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+     <style>
+        body{
+        background-image:url("{% static 'diabetesprediction/images/im.jpg'%}");
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size:1300px 800px;
+        overflow: hidden;
+        overflow-y:scroll;
+
+        }
+        .main{
+            position:fixed;
+            font-family:arial;
+            top: 140px;
+            left: 310px;
+            width: 550px;
+            bottom:30px;
+            background-color:#ffffff;
+            border-radius: 10px;
+            align-items: center;
+            padding: 5%;
+            overflow: hidden;
+            overflow-y:scroll;
+        }
+        h1{
+            color: black;
+            font-family:arial;
+            font-weight: bold;
+            font-size:60px;
+        }
+        h2{
+            color: black;
+            font-family:arial;
+            font-weight: bold;
+        }
+        p{
+        font-family:arial;
+       }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 8px 16px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 align="center">DIABETES PREDICTION SYSTEM</h1>
+    <div align="center" class="main">
+        <h2>Please Enter The Following Details</h2>
+        <form action="result">
+            <table>
+                <tr>
+                    <td align="right">Age:</td>
+                    <td align="left"><input type="text" name="n1"></td>
+                </tr>
+                <tr>
+                    <td align="right">Gender(Male/Female):</td>
+                    <td align="left"><input type="text" name="n2"></td>
+                </tr>
+                <tr>
+                    <td align="right">Excessive Urination(Yes/No):</td>
+                    <td align="left"><input type="text" name="n3"></td>
+                </tr>
+                <tr>
+                    <td align="right">Excessive Thirst(Yes/No):</td>
+                    <td align="left"><input type="text" name="n4"></td>
+                </tr>
+                <tr>
+                    <td align="right">Sudden Weight Loss(Yes/No):</td>
+                    <td align="left"><input type="text" name="n5"></td>
+                </tr>
+                <tr>
+                    <td align="right">weakness(Yes/No):</td>
+                    <td align="left"><input type="text" name="n6"></td>
+                </tr>
+                <tr>
+                    <td align="right">Excessive Hunger(Yes/No):</td>
+                    <td align="left"><input type="text" name="n7"></td>
+                </tr>
+                <tr>
+                    <td align="right">Genital Thrush(Yes/No):</td>
+                    <td align="left"><input type="text" name="n8"></td>
+                </tr>
+                <tr>
+                    <td align="right">Visual Blurring(Yes/No):</td>
+                    <td align="left"><input type="text" name="n9"></td>
+                </tr>
+                <tr>
+                    <td align="right">Itching(Yes/No):</td>
+                    <td align="left"><input type="text" name="n10"></td>
+                </tr>
+                <tr>
+                    <td align="right">Irritability(Yes/No):</td>
+                    <td align="left"><input type="text" name="n11"></td>
+                </tr>
+                <tr>
+                    <td align="right">Delayed Healing(Yes/No):</td>
+                    <td align="left"><input type="text" name="n12"></td>
+                </tr>
+                <tr>
+                    <td align="right">Muscle Weakness(Yes/No):</td>
+                    <td align="left"><input type="text" name="n13"></td>
+                </tr>
+                <tr>
+                    <td align="right">Muscle Stiffness(Yes/No):</td>
+                    <td align="left"><input type="text" name="n14"></td>
+                </tr>
+                <tr>
+                    <td align="right">Hair Loss(Yes/No):</td>
+                    <td align="left"><input type="text" name="n15"></td>
+                </tr>
+                <tr>
+                    <td align="right">Obesity(Yes/No):</td>
+                    <td align="left"><input type="text" name="n16"></td>
+                </tr>
+
+            </table>
+            <input type="submit">
+        </form>
+        <p>
+            {{result2}}
+        </p>
+
+    </div>
+
+</body>
+</html>

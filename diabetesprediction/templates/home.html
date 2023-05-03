@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+          background-image:url("{% static 'diabetesprediction/images/im.jpg'%}");
+          background-repeat:no-repeat;
+          background-attachment:fixed;
+          background-size:cover;
+        }
+
+        h2{
+            color: black;
+            font-family: arial, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 0px;
+        }
+        h3{
+         text-align:left;
+         font-family: arial;
+         font-size:30px
+       }
+        input[type=submit]{
+            background-color: #4dc3ff;
+            border: 2px;
+            color: white;
+            padding: 16px 32px;
+            cursor: pointer;
+            margin-top: 0px;
+            font-family:arial;
+        }
+        p{
+        text-align:left;
+        font-size:20px;
+        font-family:arial;
+       }
+        li{
+          text-align:left;
+          font-size:20px;
+          font-family:arial;
+        }
+
+
+    </style>
+</head>
+<body>
+  <div align="center">
+    <h2>DIABETES PREDICTION SYSTEM</h2>
+    <h3>What Is Diabetes</h3>
+    <p>
+       <strong>Diabetes</strong>  is a chronic disease that occurs when the <strong>pancreas</strong> is no longer able to make <strong>insulin</strong>, or when the body cannot make good use of the insulin it produces.<strong>Insulin</strong> is a hormone made by the pancreas, that acts like a key to let glucose from the food we eat pass from the blood stream into the cells in the body to produce energy.
+    </p>
+    <p>
+        All carbohydrate foods are broken down into glucose in the blood. Insulin helps glucose get into the cells.is a hormone made by the pancreas, that acts like a key to let glucose from the food we eat pass from the blood stream into the cells in the body to produce energy. All carbohydrate foods are broken down into glucose in the blood. Insulin helps glucose get into the cells.Not being able to produce insulin or use it effectively leads to raised glucose levels in the blood (Also known as <strong>Hyperglycaemia</strong>). Over the long-term high glucose levels are associated with damage to the body and failure of various organs and tissues.
+    </p>
+    <img src="{% static 'diabetesprediction/images/diabetes.jpg'%}"  width="400"/>
+    <h3>Types Of Diabetes</h3>
+    <p>There are two main types of diabetes – <strong>Type 1</strong> and <strong>Type 2</strong></p>
+    <img src="{% static 'diabetesprediction/images/types.png'%}"  width="400"/>
+    <ul>
+        <li>
+            <p><strong>Type 1 diabetes</strong>  can develop at any age, but occurs most frequently in children and adolescents. When you have type 1 diabetes, your body produces very little or no insulin, which means that you need daily insulin injections to maintain blood glucose levels under control.
+                </p>
+            <p>The risk factors for type 1 diabetes are still being researched. However, having a family member with type 1 diabetes slightly increases the risk of developing the disease. Environmental factors and exposure to some viral infections have also been linked to the risk of developing type 1 diabetes.
+            <a href="https://www.idf.org/aboutdiabetes/type-1-diabetes.html">Learn more</a>
+            </p>
+        </li>
+        <li>
+            <p><strong>Type 2 diabetes</strong> is more common in adults and accounts for around 90% of all diabetes cases. When you have type 2 diabetes, your body does not make good use of the insulin that it produces. The cornerstone of type 2 diabetes treatment is healthy lifestyle, including increased physical activity and healthy diet. However, over time most people with type 2 diabetes will require oral drugs and/or insulin to keep their blood glucose levels under control.
+            <a href="https://www.idf.org/aboutdiabetes/type-2-diabetes.html">Learn more</a>
+            </p>
+
+        </li>
+    </ul>
+    <h3>Importance Of Diabetes Testing</h3>
+    <p>In a country like India, the prevalence of diabetes among adults in urban areas is as high as 12 to 14 percent. Considering the population of India, the numbers are huge and increasing at a tremendous rate.
+    </p>
+    <p>
+        In India, there are estimated 77 million people above the age of 18 years are suffering from diabetes (type 2) and nearly 25 million are prediabetics (at a higher risk of developing diabetes in near future). More than 50% of people are unaware of their diabetic status which leads to health complications if not detected and treated early.
+    </p>
+    <p>
+        The fact that most of people do not experience any symptoms and present only after complications is worrying and therefore it is important to diagnose and treat it early.
+        <a href="https://www.who.int/india/health-topics/mobile-technology-for-preventing-ncds#:~:text=Diabetes%20in%20India&text=In%20India%2C%20there%20are%20estimated,developing%20diabetes%20in%20near%20future)">Learn More</a>
+    </p>
+    <h3>Symptoms Of Diabetes</h3>
+    <ul>
+        <li>Excessive Urinate</li>
+        <li>Blurred Vision</li>
+        <li>Increased Thirst</li>
+        <li>Fatigue</li>
+        <li>Obesity</li>
+    </ul>
+    <form action="predict">
+        <input type="submit" value="Lets Get Started">
+    </form>
+  </div>
+</body>
+</html>
